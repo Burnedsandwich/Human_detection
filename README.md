@@ -1,5 +1,7 @@
 # Human_detection
 
-mkdir -p ~/mobilenet_ssd && cd ~/mobilenet_ssd
-wget https://github.com/chuanqi305/MobileNet-SSD/raw/master/deploy.prototxt
-wget https://github.com/chuanqi305/MobileNet-SSD/raw/master/mobilenet_iter_73000.caffemodel
+net = cv2.dnn.readNetFromCaffe(
+    "/home/vishwaraspi/Desktop/Human Detection/mobilenet ssd/deploy.prototxt",
+    "/home/vishwaraspi/Desktop/Human Detection/mobilenet ssd/mobilenet_iter_73000.caffemodel"
+)
+
